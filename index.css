@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+@media (max-width: 767px) {
+  .logo, h1 {
+    text-align: center;
+  }
+
+  .hamburger{
+    background-color: gray;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    margin: 5px;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  body {
+    align-items: center;
+  }
+
+  .product {
+    border: 1px solid gray;
+    text-align: center;
+  }
+
+  .social{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  header {
+    display: flex;
+    flex: row;
+    justify-content: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin-left: 80px;
+  }
+
+  .logo{
+    margin: 15px;
+  } 
+
+  .hamburger{
+    background-color: gray;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    margin: 5px;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  .product {
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px 35px 0px 35px;
+  }
+
+  .social{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1025px) {
+  header {
+    display: flex;
+    flex: row;
+    justify-content: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin-left: 80px;
+  }
+
+  .logo{
+    margin: 15px;
+  } 
+
+  .hamburger{
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: gray;
+    justify-content: flex-end;
+    color: white;
+    margin: 10px;
+  }
+
+  .menu > li {
+    padding: 20px;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .product {
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px 35px 0px 35px;
+    width: 33%;
+  }
+
+  .social{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+}
